@@ -1,0 +1,17 @@
+﻿@using MvcCoreApplication.Controllers
+@model MvcCoreApplication.Entities.Restaurant
+
+@{ 
+
+    ViewBag.Title = Model.Name;
+}
+<h1>@Model.Name</h1>
+<div>
+    ID:@Model.Id
+</div>
+<div>
+    Cusine:@Model.Cuisine
+</div>
+<div>
+    @Html.ActionLink("Home", nameof(HomeController.Index))
+</div>
